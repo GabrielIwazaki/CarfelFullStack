@@ -1,0 +1,41 @@
+<html>
+        @{
+        Layout = "MasterPageDeslogado";
+    }
+    <div class="cadastroform">
+        <h1>Formulário de Cadastro</h1>
+
+        @ViewBag.Mensagem
+
+        <form action="/Usuario/Cadastro" method="POST">
+            <label>
+                Nome
+                <input type="text" name="nome">
+            </label>
+            <label>
+                E-mail
+                <input type="email" name="email">
+            </label>
+            <label>
+                Senha
+                <input type="password" name="senha">
+            </label>
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+    
+</html>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .cadastroform {
+        display: flex;
+        text-align: center;
+    }
+    h1 {
+        font-size: 3em;
+    }
+</style>

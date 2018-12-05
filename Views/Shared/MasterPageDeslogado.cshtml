@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/homecss/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+    <header class="top-bar">
+        <div class="logo">
+            <img src="imagens/checkpointlogo.png" alt="logo">
+        </div>
+        <nav class="menu-topo">
+            <ul class="menu">
+                <li>
+                    <a href="#planos">Planos</a>
+                </li>
+                <li>
+                    <a href="file:///C:/Users/49596753819/Desktop/Sprint2/Checkpoint/sobre.html">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="file:///C:/Users/49596753819/Desktop/Sprint2/Checkpoint/form.html">Formulário</a>
+                </li>
+                <li>
+                    <a href="file:///C:/Users/49596753819/Desktop/Sprint2/Checkpoint/faq.html">FAQ</a>
+                </li>
+            </ul>
+            <div class="acesso">
+                <a href= "/Usuario/Cadastro" class="cadastro">Cadastre-se</a>
+                <a href="/Usuario/Login" class="login">Logar</a>
+                
+            </div>
+            <ul class="social">
+                <li>
+                    <a href="#">
+                        <img src="imagens/instagram.png" alt="instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="imagens/twitter.png" alt="twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="imagens/facebook.png" alt="facebook">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer class="rodape">
+        <nav>
+            <ul class="endereco">
+                <ul class="localizacao">
+                    <li>
+                        <h2>Tel: lorem ipsum</h2>
+                    </li>
+                    <li>
+                        <h2>Avenida Al. Barão de Limeira, 500 - Santa Cecília/SP</h2>
+                    </li>
+                </ul>
+            </ul>
+        </nav>
+        <p>sac@carfel.com</p>
+        <a href="#">Voltar ao Início</a>
+    </footer>
+    
+</body>
+
+</html>
+<style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    outline: none;
+}
+.top-bar {
+    width: auto;
+    height: 3.75em;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    border-bottom:  solid 2px;
+    border-color: #1DB9DD;
+}
+.logo {
+    width: 52px;
+    height: 52px;
+    margin-left: 2.5em;
+}
+.logo img{
+    width: 52px;
+    height: 52px;
+}
+.menu-topo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+.menu {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3em;
+    align-items: center;
+}
+.menu li a {
+    color: black;
+    text-decoration: none;
+    align-content: center;
+    height: 1.5em;
+}
+.menu li a:hover {
+    color: orangered;
+    text-shadow: black 10px;
+    text-decoration: underline;
+}
+.acesso {
+    width: 10em;
+    padding: 5px;
+}
+.cadastro {
+    border-bottom: 1px solid #FF0000;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+}
+.login {
+    border-bottom: 1px solid #FF0000;
+    margin-top: 0.2em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.login h3 {
+    font-weight: lighter;
+}
+.social {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: right;
+    padding-top: inherit;
+}
+.social img {
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0 0.3em;
+}
+.rodape {
+    margin-top: 15em;
+    width: auto;
+    height: 5em;
+    border-top: solid 2px;
+    border-color: orangered;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5em;
+}
+.rodape a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+
+}
+.rodape p {
+    font-weight: 600;
+}
+.endereco {
+    list-style-type: none;
+}
+.localizacao {
+    list-style-type: none;
+}
+.endereco h2 {
+    font-size: 1em;
+    font-weight: lighter;
+}
+</style>

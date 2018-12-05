@@ -1,0 +1,10 @@
+<h1>Comentar</h1>
+
+@ViewBag.Mensagem
+
+<form action="/Comentario/Cadastrar" method="POST">
+    <label>
+        <input type="textarea" name="texto" placeholder="Digite seu comentário..." cols="30" rows="5" required="true">
+    </label>
+    <input type="submit" value="Cadastrar">
+</form>
